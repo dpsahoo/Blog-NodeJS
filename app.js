@@ -49,7 +49,7 @@ app.post("/compose", function(req, res){
   res.redirect("/");
 })
 
-
+// Dynamic routing
 app.get("/posts/:postName", function(req, res){
   const requestedTitle = _.lowerCase(req.params.postName);
 
