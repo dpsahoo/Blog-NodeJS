@@ -50,6 +50,8 @@ app.post("/compose", function(req, res){
 })
 
 // Dynamic routing
+// When a user requests a specific page, get the requestedTitle and 
+// compare it with the stored titles and respond with the relevant page.
 app.get("/posts/:postName", function(req, res){
   const requestedTitle = _.lowerCase(req.params.postName);
 
